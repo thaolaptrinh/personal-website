@@ -229,7 +229,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 $usernameGithub: thaolaptrinh
 
-[contributors-shield]: `https://img.shields.io/github/contributors/${{ usernameGithub }}/Best-README-Template.svg?style=for-the-badge`
+[contributors-shield]: https://img.shields.io/github/contributors/{{ usernameGithub }}/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/thaolaptrinh/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/thaolaptrinh/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/thaolaptrinh/Best-README-Template/network/members
