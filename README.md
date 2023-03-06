@@ -227,7 +227,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-usernameGithub: thaolaptrinh
+$usernameGithub: thaolaptrinh
 
 [contributors-shield]: `https://img.shields.io/github/contributors/${{ usernameGithub }}/Best-README-Template.svg?style=for-the-badge`
 [contributors-url]: https://github.com/thaolaptrinh/Best-README-Template/graphs/contributors
