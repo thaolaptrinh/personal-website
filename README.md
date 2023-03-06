@@ -227,10 +227,10 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[usernamegithub]: thaolaptrinh
-[reponame]: readme-template
+usernamegithub: thaolaptrinh
+reponame: 'readme-template'
 
-[contributors-shield]: https://img.shields.io/github/contributors/[usernameGithub]/[repoName].svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/{{usernameGithub}}/[repoName].svg?style=for-the-badge
 [contributors-url]: https://github.com/thaolaptrinh/[repoName]/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/thaolaptrinh/[repoName].svg?style=for-the-badge
 [forks-url]: https://github.com/thaolaptrinh/[repoName]/network/members
