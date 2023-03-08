@@ -174,7 +174,11 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- Information  -->
 
-{% assign variableName = "text etc." %}
+{% capture nameOfVariableToCapture %}any markdown here...{% endcapture %}
+
+Content before variable.
+{{ nameOfVariableToCapture }}
+Content after variable.
 
 [username]: 'thaolaptrinh'
 [name]: 'NguyenVanThao'
