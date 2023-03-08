@@ -151,7 +151,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [NguyenVanThao](https://thaodev.link) - thaolaptrinh@gmail.com
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,17 +173,6 @@ Use this space to list resources you find helpful and would like to give credit 
 - [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Information  -->
-
-{% capture nameOfVariableToCapture %}any markdown here...{% endcapture %}
-
-Content before variable.
-{{ nameOfVariableToCapture }}
-Content after variable.
-
-[username]: 'thaolaptrinh'
-[name]: 'NguyenVanThao'
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
