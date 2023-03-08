@@ -172,7 +172,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p>[username]</p>
+<p>[![username]][username]</p>
 <!-- Information  -->
 
 [username]: 'thaolaptrinh'
