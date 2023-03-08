@@ -178,7 +178,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 thaodangchoi[contributors-shield]
-fsfa:sfsafas
+!fsfa:sfsafas
 
 [contributors-shield]: https://img.shields.io/github/contributors/thaolaptrinh/readme-template.svg?style=for-the-badge
 [contributors-url]: https://github.com/thaolaptrinh/readme-template/graphs/contributors
