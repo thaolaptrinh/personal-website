@@ -151,9 +151,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username2342) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Your Name - [NguyenVanThao](https://thaodev.link) - thaolaptrinh@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
