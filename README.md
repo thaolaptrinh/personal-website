@@ -172,6 +172,12 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<p>[username]</p>
+<!-- Information  -->
+
+[username]: 'thaolaptrinh'
+[name]: 'NguyenVanThao'
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
