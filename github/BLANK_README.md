@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/thaolaptrinh/readme-template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="github/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">readme-template</h3>
@@ -189,7 +189,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/thaolaptrinh/readme-template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/thaolaptrinh
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: github/images/screenshot.png
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
