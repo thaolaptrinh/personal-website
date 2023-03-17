@@ -92,6 +92,8 @@ Use the `github/BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
+- [![Figma][figma.com]][figma-url]
+
 - [![Sass][sass-lang.com]][sass-url]
 - [![Bootstrap][bootstrap.com]][bootstrap-url]
 - [![JQuery][jquery.com]][jquery-url]
@@ -191,3 +193,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [jquery-url]: https://jquery.com
 [sass-lang.com]: https://img.shields.io/badge/Sass-CF649A?style=for-the-badge&logo=sass&logoColor=white
 [sass-url]: https://sass-lang.com
+[figma-url]: figma.com/community/search?resource_type=mixed&sort_by=popular&query=Landing+Page&editor_type=all
+[figma.com]: https://img.shields.io/badge/Figma-CF649A?style=for-the-badge&logo=figma&logoColor=white
