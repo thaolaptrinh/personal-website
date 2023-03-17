@@ -42,6 +42,24 @@
     }
   }
 
+  & .navbar-toggler {
+
+
+    @include maxWidth(575.98px) {
+
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .navbar-toggler-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+    }
+  }
+
 
 
 
