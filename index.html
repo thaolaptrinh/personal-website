@@ -18,79 +18,7 @@
   <body>
     <div id="app">
       <!-- ========== Start Header ========== -->
-      <header class="header">
-        <nav class="navbar bg-primary fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="./"
-              ><img src="./public/logo.png" class="header__logo" alt="logo"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas bg-primary offcanvas-end text-bg-dark"
-              tabindex="-1"
-              id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  <img
-                    src="./public/logo.png"
-                    class="header__logo"
-                    alt="logo"
-                  />
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close btn-close-white"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="./pages/about.html"
-                      >About</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/newsletter.html"
-                      >Newsletter</a
-                    >
-                  </li>
-                </ul>
-                <div class="search__form">
-                  <form action="">
-                    <div class="form-group position-relative">
-                      <input
-                        type="text"
-                        placeholder="Keywords"
-                        class="form-control"
-                      />
-
-                      <button class="button button-primary">Search</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <header class="header"></header>
 
       <!-- ========== End Header ========== -->
 
@@ -118,19 +46,43 @@
                   class="hero__socials d-flex gap-3 justify-content-center justify-content-md-start"
                 >
                   <div class="icon">
-                    <img src="./images/icon/twitter.png" alt="" />
+                    <a
+                      href="https://twitter.com/"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <img src="./images/icon/twitter.png" alt="" />
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <img src="./images/icon/facebook.png" alt="" />
+                    <a
+                      rel="noopener"
+                      href="https://www.facebook.com/thaotoiday"
+                      target="_blank"
+                    >
+                      <img src="./images/icon/facebook.png" alt="" />
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <img src="./images/icon/linkedin.png" alt="" />
+                    <a
+                      href="https://www.linkedin.com/"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <img src="./images/icon/linkedin.png" alt="" />
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <img src="./images/icon/youtube.png" alt="" />
+                    <a
+                      href="https://www.youtube.com/"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <img src="./images/icon/youtube.png" alt="" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -241,17 +193,14 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                   <div class="item">
                     <div class="card text-center">
-                      <a href="./pages/blog-detail.html">
+                      <a href="./blog-detail.html">
                         <img
                           class="card-img-top"
                           src="./images/post/1.png"
                           alt="Title"
                         />
                       </a>
-                      <a
-                        href="./pages/blog-detail.html"
-                        class="text-decoration-none"
-                      >
+                      <a href="./blog-detail.html" class="text-decoration-none">
                         <div class="card-body">
                           <h4 class="card-title">Lorem ipsum dolor</h4>
                           <p class="card-text">
@@ -273,17 +222,14 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                   <div class="item">
                     <div class="card text-center">
-                      <a href="./pages/blog-detail.html">
+                      <a href="./blog-detail.html">
                         <img
                           class="card-img-top"
                           src="./images/post/2.png"
                           alt="Title"
                         />
                       </a>
-                      <a
-                        href="./pages/blog-detail.html"
-                        class="text-decoration-none"
-                      >
+                      <a href="./blog-detail.html" class="text-decoration-none">
                         <div class="card-body">
                           <h4 class="card-title">Lorem ipsum dolor</h4>
                           <p class="card-text">
@@ -305,17 +251,14 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                   <div class="item">
                     <div class="card text-center">
-                      <a href="./pages/blog-detail.html">
+                      <a href="./blog-detail.html">
                         <img
                           class="card-img-top"
                           src="./images/post/3.png"
                           alt="Title"
                         />
                       </a>
-                      <a
-                        href="./pages/blog-detail.html"
-                        class="text-decoration-none"
-                      >
+                      <a href="./blog-detail.html" class="text-decoration-none">
                         <div class="card-body">
                           <h4 class="card-title">Lorem ipsum dolor</h4>
                           <p class="card-text">
@@ -380,37 +323,10 @@
 
       <!-- ========== End Main ========== -->
 
-      <footer class="footer">
-        <div class="container">
-          <div
-            class="footer__container d-md-flex pt-3 pt-md-0 justify-content-between align-items-center"
-          >
-            <div class="footer__copyright text-center text-md-start">
-              © Copyright 2022 by Thao’s blog. Built with
-              <span>&#128151;</span> by CreativeDesignsGuru
-            </div>
-            <div
-              class="footer__socials d-flex gap-3 justify-content-center mt-2 mt-md-0"
-            >
-              <div class="icon">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </div>
-              <div class="icon">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-              <div class="icon">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </div>
-              <div class="icon">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <footer class="footer"></footer>
     </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script src="./assets/js/app.js"></script> -->
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

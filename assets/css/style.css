@@ -31,7 +31,7 @@ p {
 :root {
   --font: "Roboto", sans-serif;
   --font-size: "16px";
-  --bg-color: #0F172A;
+  --body-bg-color: #0F172A;
   --primary-color: #22D3EE;
   --black: #1E293B;
   --white: #F8FAFC;
@@ -55,11 +55,21 @@ html ::-webkit-scrollbar-thumb {
 body {
   font-family: var(--font);
   font-size: var(--font-size);
-  background: var(--bg-color);
+  background: var(--body-bg-color);
+  transition: all 0.5s linear;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .bg-primary {
-  background-color: var(--bg-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.bg-body {
+  background-color: var(--body-bg-color) !important;
 }
 
 #app {
@@ -454,6 +464,25 @@ main {
 @media screen and (min-width: 768px) {
   .posts .card-body {
     font-size: 20px;
+  }
+}
+
+.post__content {
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .post__content {
+    font-size: 26px;
+  }
+}
+.post__content h3 {
+  font-size: 14px !important;
+  color: var(--white);
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .post__content h3 {
+    font-size: 30px !important;
   }
 }
 

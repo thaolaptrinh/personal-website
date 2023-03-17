@@ -21,12 +21,24 @@ html {
 body {
   font-family: var(--font);
   font-size: var(--font-size);
-  background: var(--bg-color);
+  background: var(--body-bg-color);
+  transition: all 0.5s linear;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .bg-primary {
-  background-color: var(--bg-color) !important;
+  background-color: var(--primary-color) !important;
 }
+
+.bg-body {
+  background-color: var(--body-bg-color) !important;
+}
+
+
 
 #app {
   max-width: 1200px;

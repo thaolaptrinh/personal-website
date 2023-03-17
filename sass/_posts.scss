@@ -112,3 +112,30 @@
 
 
 }
+
+.post {
+
+
+  &__content {
+
+    font-size: 12px;
+
+    @include minWidth(768px) {
+      font-size: 26px;
+    }
+
+    & h3 {
+
+      font-size: 14px !important;
+      color: var(--white);
+      font-weight: bold;
+
+      @include minWidth(768px) {
+        font-size: 30px !important;
+      }
+    }
+
+
+  }
+
+}
