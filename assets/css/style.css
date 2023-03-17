@@ -266,15 +266,13 @@ main {
 }
 @media screen and (max-width: 575.98px) {
   .header .navbar-toggler {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 0;
   }
   .header .navbar-toggler .navbar-toggler-icon {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
 
