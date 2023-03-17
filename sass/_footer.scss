@@ -29,6 +29,11 @@
     font-size: 16px;
     color: var(--gray);
 
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
     @include minWidth(576px) {
       font-size: 30px;
     }
