@@ -1,0 +1,20 @@
+.about {
+
+  & .name {
+    font-size: 18px;
+  }
+
+  &__content {
+    margin-top: 30px;
+    text-align: start;
+    font-size: 17px;
+
+    @include minWidth(768px) {
+      font-size: 22px;
+    }
+
+  }
+
+
+
+}
