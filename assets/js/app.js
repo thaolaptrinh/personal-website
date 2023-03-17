@@ -80,7 +80,7 @@ footer.innerHTML = `
   class="footer__container d-md-flex pt-3 pt-md-0 justify-content-between align-items-center"
 >
   <div class="footer__copyright text-center text-md-start">
-    © Copyright 2022 by Thao’s blog. Built with
+    © Copyright 2023 by Thao’s blog. Built with
     <span>&#128151;</span> by ThaoLapTrinh
   </div>
   <div
