@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
       rel="stylesheet"
@@ -18,12 +16,401 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div id="app">
+      <!-- ========== Start Header ========== -->
+      <header class="header">
+        <nav class="navbar bg-primary fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="./"
+              ><img src="./public/logo.png" class="header__logo" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas bg-primary offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  <img
+                    src="./public/logo.png"
+                    class="header__logo"
+                    alt="logo"
+                  />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="./pages/about.html"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/newsletter.html"
+                      >Newsletter</a
+                    >
+                  </li>
+                </ul>
+                <div class="search__form">
+                  <form action="">
+                    <div class="form-group position-relative">
+                      <input
+                        type="text"
+                        placeholder="Keywords"
+                        class="form-control"
+                      />
 
-      
+                      <button class="button button-primary">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ========== End Header ========== -->
+
+      <!-- ========== Start Main ========== -->
+      <main class="main">
+        <!-- ========== Start Hero ========== -->
+        <section class="section hero">
+          <div class="container">
+            <div class="row flex-column flex-md-row align-items-center">
+              <div class="col-12 col-md-7 order-1 order-md-0">
+                <h1 class="section__title text-center text-md-start">
+                  Hi there, I’m <span class="text-primary">Thao</span>👋
+                </h1>
+
+                <div class="hero__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus malesuada nisi tellus, non imperdiet nisi tempor at.
+                  Lorem ipsum dolor sit amet,
+                  <span class="text-primary">consectetur</span> adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et
+                  <span class="text-primary">dolore</span>.
+                </div>
+
+                <div
+                  class="hero__socials d-flex gap-3 justify-content-center justify-content-md-start"
+                >
+                  <div class="icon">
+                    <img src="./images/icon/twitter.png" alt="" />
+                  </div>
+
+                  <div class="icon">
+                    <img src="./images/icon/facebook.png" alt="" />
+                  </div>
+
+                  <div class="icon">
+                    <img src="./images/icon/linkedin.png" alt="" />
+                  </div>
+
+                  <div class="icon">
+                    <img src="./images/icon/youtube.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 offset-md-1">
+                <img
+                  src="./images/avatar.png"
+                  class="hero__avatar mx-auto"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== End Hero ========== -->
+
+        <!-- ========== Start Recent Projects ========== -->
+
+        <section class="section projects">
+          <div class="container">
+            <h1 class="section__title">
+              Recent <span class="text-primary">Projects</span>
+            </h1>
+            <div class="projects__list">
+              <div class="item">
+                <div class="item-icon">
+                  <img src="./images/illustrations/1.png" alt="" />
+                </div>
+                <div class="item-body">
+                  <h3 class="item-title">
+                    Project1
+                    <span class="badge badge-1 ms-3">Web Design</span>
+                  </h3>
+                  <div class="item-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse bibendum.
+                    </p>
+                    <p>
+                      Nunc non posuere consectetur, justo erat semper enim, non
+                      hendrerit dui odio id enim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-icon">
+                  <img src="./images/illustrations/2.png" alt="" />
+                </div>
+                <div class="item-body">
+                  <h3 class="item-title">
+                    Project2
+                    <span class="badge badge-2 ms-3">Next.js</span>
+                  </h3>
+                  <div class="item-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse bibendum.
+                    </p>
+                    <p>
+                      Nunc non posuere consectetur, justo erat semper enim, non
+                      hendrerit dui odio id enim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-icon">
+                  <img src="./images/illustrations/3.png" alt="" />
+                </div>
+                <div class="item-body">
+                  <h3 class="item-title">
+                    Project3
+                    <span class="badge badge-3 ms-3">Awesome feature</span>
+                  </h3>
+                  <div class="item-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse bibendum.
+                    </p>
+                    <p>
+                      Nunc non posuere consectetur, justo erat semper enim, non
+                      hendrerit dui odio id enim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== End Recent Projects ========== -->
+
+        <!-- ========== Start Latest Posts ========== -->
+
+        <section class="section posts">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <h1 class="section__title">
+                Latest <span class="text-primary">Posts</span>
+              </h1>
+              <a class="view-all" href="#"
+                >View all Posts
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="posts__list">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="item">
+                    <div class="card text-center">
+                      <a href="./pages/blog-detail.html">
+                        <img
+                          class="card-img-top"
+                          src="./images/post/1.png"
+                          alt="Title"
+                        />
+                      </a>
+                      <a
+                        href="./pages/blog-detail.html"
+                        class="text-decoration-none"
+                      >
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum dolor</h4>
+                          <p class="card-text">
+                            <span class="text-muted"
+                              >April 24, 2022 - 5 min read</span
+                            >
+                          </p>
+
+                          <p class="card-text">
+                            Nunc non posuere consectetur, justo erat semper
+                            enim, non hendrerit dui odio id enim.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="item">
+                    <div class="card text-center">
+                      <a href="./pages/blog-detail.html">
+                        <img
+                          class="card-img-top"
+                          src="./images/post/2.png"
+                          alt="Title"
+                        />
+                      </a>
+                      <a
+                        href="./pages/blog-detail.html"
+                        class="text-decoration-none"
+                      >
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum dolor</h4>
+                          <p class="card-text">
+                            <span class="text-muted"
+                              >April 03, 2022 - 4 min read</span
+                            >
+                          </p>
+
+                          <p class="card-text">
+                            Nunc non posuere consectetur, justo erat semper
+                            enim, non hendrerit dui odio id enim.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="item">
+                    <div class="card text-center">
+                      <a href="./pages/blog-detail.html">
+                        <img
+                          class="card-img-top"
+                          src="./images/post/3.png"
+                          alt="Title"
+                        />
+                      </a>
+                      <a
+                        href="./pages/blog-detail.html"
+                        class="text-decoration-none"
+                      >
+                        <div class="card-body">
+                          <h4 class="card-title">Lorem ipsum dolor</h4>
+                          <p class="card-text">
+                            <span class="text-muted"
+                              >March 12, 2022 - 6 min read</span
+                            >
+                          </p>
+
+                          <p class="card-text">
+                            Nunc non posuere consectetur, justo erat semper
+                            enim, non hendrerit dui odio id enim.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== End Latest Posts ========== -->
+
+        <!-- ========== Start Subscribe ========== -->
+        <section class="section subscribe">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <h1 class="section__title">
+                  Subscribe to my <span class="text-primary">Newsletters</span>
+                </h1>
+                <div class="subscribe__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <p>
+                    Phasellus malesuada nisi tellus, non imperdiet nisi tempor
+                    at.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5 offset-lg-1 align-self-end">
+                <div class="subscribe__form">
+                  <form action="">
+                    <div class="form-group position-relative">
+                      <input
+                        type="text"
+                        placeholder="Enter your Email"
+                        class="form-control"
+                      />
+
+                      <button class="button button-primary">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== End Subscribe ========== -->
+      </main>
+
+      <!-- ========== End Main ========== -->
+
+      <footer class="footer">
+        <div class="container">
+          <div
+            class="footer__container d-md-flex pt-3 pt-md-0 justify-content-between align-items-center"
+          >
+            <div class="footer__copyright text-center text-md-start">
+              © Copyright 2022 by Thao’s blog. Built with
+              <span>&#128151;</span> by CreativeDesignsGuru
+            </div>
+            <div
+              class="footer__socials d-flex gap-3 justify-content-center mt-2 mt-md-0"
+            >
+              <div class="icon">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </div>
+              <div class="icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/cjs/popper.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
   </body>
 </html>
