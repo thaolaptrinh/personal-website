@@ -1,0 +1,50 @@
+.header {
+
+
+
+  &__logo {
+
+    width: 91px;
+    height: 25px;
+
+
+    @include minWidth(576px) {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & nav {
+
+    max-width: 1200px !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include minWidth(576px) {
+      height: 112px;
+
+    }
+  }
+
+  & .nav-link {
+    color: var(--white);
+    font-size: 22px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      font-weight: 500;
+      background: linear-gradient(270.06deg, #22D3EE 20.05%, #0EA5E9 39.83%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      transform: translateX(10px);
+
+    }
+  }
+
+
+
+
+
+
+}

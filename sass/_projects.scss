@@ -1,0 +1,107 @@
+.projects {
+
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include minWidth(768px) {
+
+      gap: 40px;
+    }
+  }
+
+
+  & .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    gap: 18px;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 20px;
+
+    @include minWidth(768px) {
+      flex-direction: row;
+      align-items: center;
+      padding: 30px;
+      gap: 76px;
+
+    }
+
+    &:first-child {
+      margin-top: 25px;
+
+      @include minWidth(576px) {
+        margin-top: 83px;
+
+      }
+    }
+
+
+  }
+
+  & .item-title {
+
+    @include maxWidth(767.98px) {
+      align-self: center;
+    }
+  }
+
+  & .item-icon {
+
+    width: 70px;
+    height: 56.35px;
+
+    @include minWidth(768px) {
+      width: 250px;
+      height: 231.76px;
+
+    }
+
+    & img {
+
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+
+
+  & .item-body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+
+    @include minWidth(768px) {
+      gap: 25px;
+    }
+
+
+  }
+
+  & .item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    text-align: left;
+
+    &>p {
+      margin: 0;
+    }
+
+    @include minWidth(768px) {
+      gap: 14px;
+    }
+  }
+
+}

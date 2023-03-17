@@ -1,0 +1,45 @@
+.hero {
+
+  display: block;
+
+
+
+  &__avatar {
+
+    height: 100px;
+    width: 100px;
+
+    margin-bottom: 17px;
+
+    @include minWidth(576px) {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  &__content {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 500;
+
+    @include minWidth(576px) {
+      margin-top: 48px;
+      margin-bottom: 45px;
+      font-size: 26px;
+    }
+  }
+
+  &__socials {
+
+    & .icon {
+      width: 30px;
+      height: 30px;
+
+      @include minWidth(567px) {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+}

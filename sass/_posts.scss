@@ -1,0 +1,114 @@
+.posts {
+
+
+  & .view-all {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--gray);
+
+    @include minWidth(768px) {
+      font-size: 20px;
+      gap: 20px;
+    }
+
+    & i {
+      font-size: 20px;
+
+      @include minWidth(768px) {
+        font-size: 44px;
+      }
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+    @include minWidth(768px) {
+      gap: 20px;
+    }
+  }
+
+
+  & .item {
+
+
+    &:first-child {
+      margin-top: 25px;
+
+      @include minWidth(576px) {
+        margin-top: 83px;
+
+      }
+    }
+
+
+  }
+
+
+
+  & .card {
+    border-radius: 20px;
+    background-color: var(--black);
+
+  }
+
+  & .card-title {
+
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--white);
+
+    padding-top: 14px;
+
+    @include minWidth(768px) {
+      padding-top: 22px;
+      font-size: 24px;
+    }
+
+  }
+
+  & .card-img-top {
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+
+
+
+
+  & .card-body {
+    padding: 6px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: var(--gray);
+
+    @include minWidth(576px) {
+      padding: 8px;
+      padding-bottom: 20px;
+
+    }
+
+    @include minWidth(768px) {
+      font-size: 20px;
+    }
+  }
+
+
+
+}

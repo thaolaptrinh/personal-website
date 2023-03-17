@@ -1,0 +1,35 @@
+.newsletter {
+
+  max-width: 855px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__content {
+
+    padding-top: 29px;
+    font-size: 14px;
+
+    &>p {
+      padding-bottom: 27px;
+    }
+
+    & li {
+      text-align: left;
+
+      & span {
+        color: var(--primary-color);
+        font-weight: 700;
+      }
+    }
+
+    @include minWidth(575.98px) {
+      padding-top: 50px;
+
+      font-size: 24px;
+
+    }
+  }
+
+
+
+}

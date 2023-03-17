@@ -1,0 +1,17 @@
+.subscribe {
+
+
+  &__desc {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--gray);
+
+    @include minWidth(992px) {
+      margin-top: 33px;
+      margin-bottom: 0px;
+      font-size: 20px;
+
+    }
+  }
+}

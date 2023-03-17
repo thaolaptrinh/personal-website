@@ -1,0 +1,11 @@
+@mixin maxWidth($break-point) {
+  @media screen and (max-width:$break-point) {
+    @content;
+  }
+}
+
+@mixin minWidth($break-point) {
+  @media screen and (min-width:$break-point) {
+    @content;
+  }
+}
