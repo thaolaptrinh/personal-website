@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 
 header.innerHTML = `<nav class="navbar bg-body fixed-top">
 <div class="container">
-  <a class="navbar-brand" href="./"
+  <a class="navbar-brand" href="./index.html"
     ><img src="./public/logo.png" class="header__logo" alt="logo"
   /></a>
   <button
