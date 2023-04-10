@@ -1,11 +1,12 @@
 <div class="section quizzes">
   <div class="container">
     <div class="quizzes__form">
-      <form action="">
+      <form action="" ng-submit="handleSearchQ($event)">
         <div class="form-group position-relative">
           <input
             type="text"
             style="width: 50%"
+            ng-model="input.searchQ"
             placeholder="Quiz search"
             class="form-control mx-auto"
           />

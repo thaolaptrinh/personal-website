@@ -1,4 +1,4 @@
-<div class="section" ng-if="data.data">
+<!-- <div class="section" ng-if="data.data">
   <h1 class="text-center text-primary mb-5" style="font-size: 32px">
     {{ data.name }}
   </h1>
@@ -23,15 +23,84 @@
   </form>
 </div>
 
+-->
+<div class="section">
+  <div class="quiz-area" ng-show="inProgress">
+    <div ng-show="!quizOver">
+      <h2 id="question">{{ id+1 }}. {{question}}</h2>
+      <ul id="answers">
+        <li ng-repeat="(key,answer) in answers" ng-if="answer !== null">
+          <label>
+            <input type="radio" name="answer" value="{{key}}" />
+            {{answer}}
+          </label>
+        </li>
+      </ul>
+      <button
+        ng-click="checkAnswer()"
+        ng-show="answerMode"
+        class="button button-secondary"
+      >
+        Submit
+      </button>
+
+      <div ng-show="!answerMode">
+        <button
+          ng-click="nextQuestion()"
+          class="next-question button button-secondary"
+        >
+          Next
+        </button>
+        <span ng-show="correctAns">That is correct!</span>
+        <span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
+      </div>
+    </div>
+
+    <div ng-show="quizOver">
+      <h1 class="text-primary mb-3" style="font-size: 32px">Quiz is over</h1>
+      <button ng-click="reset()" class="button button-secondary">
+        Play again
+      </button>
+    </div>
+
+    <div id="score" class="text-primary">Score: {{score}}</div>
+  </div>
+
+  <div class="intro text-center" ng-show="!inProgress">
+    <h1 class="text-primary mb-3" style="font-size: 32px">
+      Welcome to the QuizApp
+    </h1>
+    <button id="startQuiz" class="button button-primary" ng-click="start()">
+      Start the Quiz
+    </button>
+  </div>
+</div>
+
 <style>
-  .question {
+  .quiz-area {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #answers {
     background: rgba(30, 41, 59, 0.4);
     border-radius: 20px;
     padding: 30px;
     cursor: pointer;
   }
 
-  .question:hover {
+  li {
+    list-style: none;
+  }
+  li label {
+    font-size: 20px;
+  }
+  li input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  #answers:hover {
     background: rgba(30, 41, 59, 0.7);
   }
 </style>

@@ -115,10 +115,15 @@ main {
   border: none;
 }
 
-.button-secondary {
+.button.button-secondary {
   background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
   border-radius: 5px;
   color: var(--black);
+}
+
+.button.button-primary {
+  background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
+  border-radius: 30px;
 }
 
 .subscribe__form,
