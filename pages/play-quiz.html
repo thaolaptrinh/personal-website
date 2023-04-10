@@ -51,19 +51,19 @@
         >
           Next
         </button>
-        <span ng-show="correctAns">That is correct!</span>
-        <span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
+        <span ng-show="correctAns" class="text-success">That is correct!</span>
+        <span ng-show="!correctAns" class="text-danger">Sorry, that is an incorrect answer.</span>
       </div>
     </div>
 
-    <div ng-show="quizOver">
+    <div ng-show="quizOver" class="text-center">
       <h1 class="text-primary mb-3" style="font-size: 32px">Quiz is over</h1>
       <button ng-click="reset()" class="button button-secondary">
         Play again
       </button>
     </div>
 
-    <div id="score" class="text-primary">Score: {{score}}</div>
+    <div id="score" class="text-center text-primary mt-3" style="font-size: 32px;">Score: {{score}}</div>
   </div>
 
   <div class="intro text-center" ng-show="!inProgress">

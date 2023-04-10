@@ -30,7 +30,6 @@ app.config(function ($routeProvider, $locationProvider) {
     })
     .when("/newsletter", {
       templateUrl: "pages/newsletter.html",
-      controller: "NewsletterController",
       title: "Newsletter",
     })
     .when("/404", {
@@ -75,10 +74,15 @@ app.run(function ($rootScope, $location, $route) {
 app.controller(
   "AppController",
   function ($rootScope, $scope, $location, $http, $sce, $routeParams) {
-    $rootScope.API_URL = "https://personal-sage.vercel.app";
+    // $rootScope.API_URL = "https://personal-sage.vercel.app";
+    $rootScope.API_URL = "http://localhost:3000";
+
     console.log($location);
     $rootScope.BASE_URL = "http://" + $location.host() + ":" + $location.port();
     $scope.date = new Date();
+    const options = {
+      headers: { Accept: "application/json" },
+    };
     $http.get($rootScope.API_URL + "/author").then((res) => {
       $rootScope.author = res.data;
     });
