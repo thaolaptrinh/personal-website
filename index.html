@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App" ng-controller="AppController">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Personal Website</title>
-    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon" />
+    <title ng-bind="$root.title + ' - Personal Website'">
+      Home - Personal Website
+    </title>
+
+    <link
+      rel="shortcut icon"
+      href="{{BASE_URL+ site.favicon }}"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,317 +24,29 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div id="app">
+    <div id="app" ng-app="myApp">
       <!-- ========== Start Header ========== -->
-      <header class="header"></header>
+      <header class="header" ng-include="'./includes/header.html'"></header>
 
       <!-- ========== End Header ========== -->
 
       <!-- ========== Start Main ========== -->
       <main class="main">
-        <!-- ========== Start Hero ========== -->
-        <section class="section hero">
-          <div class="container">
-            <div class="row flex-column flex-md-row align-items-center">
-              <div class="col-12 col-md-7 order-1 order-md-0">
-                <h1 class="section__title text-center text-md-start">
-                  Hi there, I’m <span class="text-primary">Thao</span>👋
-                </h1>
+        <div ng-view></div>
 
-                <div class="hero__content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus malesuada nisi tellus, non imperdiet nisi tempor at.
-                  Lorem ipsum dolor sit amet,
-                  <span class="text-primary">consectetur</span> adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et
-                  <span class="text-primary">dolore</span>.
-                </div>
-
-                <div
-                  class="hero__socials d-flex gap-3 justify-content-center justify-content-md-start"
-                >
-                  <div class="icon">
-                    <a
-                      href="https://twitter.com/"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <img src="./images/icon/twitter.png" alt="" />
-                    </a>
-                  </div>
-
-                  <div class="icon">
-                    <a
-                      rel="noopener"
-                      href="https://www.facebook.com/thaotoiday"
-                      target="_blank"
-                    >
-                      <img src="./images/icon/facebook.png" alt="" />
-                    </a>
-                  </div>
-
-                  <div class="icon">
-                    <a
-                      href="https://www.linkedin.com/"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <img src="./images/icon/linkedin.png" alt="" />
-                    </a>
-                  </div>
-
-                  <div class="icon">
-                    <a
-                      href="https://www.youtube.com/"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <img src="./images/icon/youtube.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 offset-md-1">
-                <img
-                  src="./images/avatar.png"
-                  class="hero__avatar mx-auto"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ========== End Hero ========== -->
-
-        <!-- ========== Start Recent Projects ========== -->
-
-        <section class="section projects">
-          <div class="container">
-            <h1 class="section__title">
-              Recent <span class="text-primary">Projects</span>
-            </h1>
-            <div class="projects__list">
-              <div class="item">
-                <div class="item-icon">
-                  <img src="./images/illustrations/1.png" alt="" />
-                </div>
-                <div class="item-body">
-                  <h3 class="item-title">
-                    Project1
-                    <span class="badge badge-1 ms-3">Web Design</span>
-                  </h3>
-                  <div class="item-content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse bibendum.
-                    </p>
-                    <p>
-                      Nunc non posuere consectetur, justo erat semper enim, non
-                      hendrerit dui odio id enim.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="item-icon">
-                  <img src="./images/illustrations/2.png" alt="" />
-                </div>
-                <div class="item-body">
-                  <h3 class="item-title">
-                    Project2
-                    <span class="badge badge-2 ms-3">Next.js</span>
-                  </h3>
-                  <div class="item-content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse bibendum.
-                    </p>
-                    <p>
-                      Nunc non posuere consectetur, justo erat semper enim, non
-                      hendrerit dui odio id enim.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="item-icon">
-                  <img src="./images/illustrations/3.png" alt="" />
-                </div>
-                <div class="item-body">
-                  <h3 class="item-title">
-                    Project3
-                    <span class="badge badge-3 ms-3">Awesome feature</span>
-                  </h3>
-                  <div class="item-content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse bibendum.
-                    </p>
-                    <p>
-                      Nunc non posuere consectetur, justo erat semper enim, non
-                      hendrerit dui odio id enim.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ========== End Recent Projects ========== -->
-
-        <!-- ========== Start Latest Posts ========== -->
-
-        <section class="section posts">
-          <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-              <h1 class="section__title">
-                Latest <span class="text-primary">Posts</span>
-              </h1>
-              <a class="view-all" href="#"
-                >View all Posts
-                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="posts__list">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="item">
-                    <div class="card text-center">
-                      <a href="./blog-detail.html">
-                        <img
-                          class="card-img-top"
-                          src="./images/post/1.png"
-                          alt="Title"
-                        />
-                      </a>
-                      <a href="./blog-detail.html" class="text-decoration-none">
-                        <div class="card-body">
-                          <h4 class="card-title">Lorem ipsum dolor</h4>
-                          <p class="card-text">
-                            <span class="text-muted"
-                              >April 24, 2022 - 5 min read</span
-                            >
-                          </p>
-
-                          <p class="card-text">
-                            Nunc non posuere consectetur, justo erat semper
-                            enim, non hendrerit dui odio id enim.
-                          </p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="item">
-                    <div class="card text-center">
-                      <a href="./blog-detail.html">
-                        <img
-                          class="card-img-top"
-                          src="./images/post/2.png"
-                          alt="Title"
-                        />
-                      </a>
-                      <a href="./blog-detail.html" class="text-decoration-none">
-                        <div class="card-body">
-                          <h4 class="card-title">Lorem ipsum dolor</h4>
-                          <p class="card-text">
-                            <span class="text-muted"
-                              >April 03, 2022 - 4 min read</span
-                            >
-                          </p>
-
-                          <p class="card-text">
-                            Nunc non posuere consectetur, justo erat semper
-                            enim, non hendrerit dui odio id enim.
-                          </p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="item">
-                    <div class="card text-center">
-                      <a href="./blog-detail.html">
-                        <img
-                          class="card-img-top"
-                          src="./images/post/3.png"
-                          alt="Title"
-                        />
-                      </a>
-                      <a href="./blog-detail.html" class="text-decoration-none">
-                        <div class="card-body">
-                          <h4 class="card-title">Lorem ipsum dolor</h4>
-                          <p class="card-text">
-                            <span class="text-muted"
-                              >March 12, 2022 - 6 min read</span
-                            >
-                          </p>
-
-                          <p class="card-text">
-                            Nunc non posuere consectetur, justo erat semper
-                            enim, non hendrerit dui odio id enim.
-                          </p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ========== End Latest Posts ========== -->
-
-        <!-- ========== Start Subscribe ========== -->
-        <section class="section subscribe">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-6">
-                <h1 class="section__title">
-                  Subscribe to my <span class="text-primary">Newsletters</span>
-                </h1>
-                <div class="subscribe__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <p>
-                    Phasellus malesuada nisi tellus, non imperdiet nisi tempor
-                    at.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-lg-5 offset-lg-1 align-self-end">
-                <div class="subscribe__form">
-                  <form action="">
-                    <div class="form-group position-relative">
-                      <input
-                        type="text"
-                        placeholder="Enter your Email"
-                        class="form-control"
-                      />
-
-                      <button class="button button-primary">Subscribe</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ========== End Subscribe ========== -->
+        <div ng-if="pathCurrent != '/newsletter'">
+          <div ng-include="'./includes/subscribe.html'"></div>
+        </div>
       </main>
 
       <!-- ========== End Main ========== -->
 
-      <footer class="footer"></footer>
+      <footer class="footer" ng-include="'./includes/footer.html'"></footer>
     </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-route/angular-route.min.js"></script>
+    <script src="./assets/js/app-angular.js"></script>
   </body>
 </html>
