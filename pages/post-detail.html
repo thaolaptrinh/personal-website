@@ -1,0 +1,18 @@
+<section class="section post">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="section__title mb-4 mb-md-5">{{ post.title }}</h1>
+    </div>
+    <p class="text-muted mb-5 text-center text-md-start">
+      By {{ author.username }} on {{ post.created_at }}
+    </p>
+
+    <div class="post__img">
+      <img src="./images/post/bg-1.png" alt="Post image" />
+    </div>
+    <div
+      class="post__content mt-4 mt-md-5"
+      ng-bind-html="post.body | trustAs"
+    ></div>
+  </div>
+</section>

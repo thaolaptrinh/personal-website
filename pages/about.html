@@ -1,0 +1,55 @@
+<!-- ========== Start About ========== -->
+<section class="section about">
+  <div class="container text-center">
+    <h1 class="section__title">
+      About <span class="text-primary">my self</span>
+    </h1>
+
+    <div class="about__top">
+      <div class="avatar">
+        <img src="{{ BASE_URL + author.avatar }}" alt="Avatar" />
+      </div>
+      <p class="name text-primary">{{ auhtor.name }}</p>
+      <p class="text-muted" ng-repeat="job in author.jobs">{{ job }}</p>
+
+      <div class="socials d-flex gap-3 justify-content-center my-3 my-md-5">
+        <div class="icon">
+          <a href="https://twitter.com/" rel="noopener" target="_blank">
+            <img src="./images/icon/twitter.png" alt="" />
+          </a>
+        </div>
+
+        <div class="icon">
+          <a rel="noopener" href="{{ author.facebook }}" target="_blank">
+            <img src="./images/icon/facebook.png" alt="" />
+          </a>
+        </div>
+
+        <div class="icon">
+          <a href="https://www.linkedin.com/" rel="noopener" target="_blank">
+            <img src="./images/icon/linkedin.png" alt="" />
+          </a>
+        </div>
+
+        <div class="icon">
+          <a href="https://www.youtube.com/" rel="noopener" target="_blank">
+            <img src="./images/icon/youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <a
+        href="{{ BASE_URL + author.cv.link }}"
+        class="button button-secondary text-uppercase"
+        download="cv"
+      >
+        DOWNLOAD CV
+      </a>
+    </div>
+    <div
+      class="about__content"
+      ng-bind-html="author.cv.content | trustAs"
+    ></div>
+  </div>
+</section>
+<!-- ========== End About ========== -->

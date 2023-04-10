@@ -1,0 +1,27 @@
+<div class="section quizzes">
+  <div class="container">
+    <div class="quizzes__form">
+      <form action="">
+        <div class="form-group position-relative">
+          <input
+            type="text"
+            style="width: 50%"
+            placeholder="Quiz search"
+            class="form-control mx-auto"
+          />
+        </div>
+      </form>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-6 col-lg-4" ng-repeat="quiz in quizzes">
+        <a href="#!/quizzes/play/{{ quiz.id }}">
+          <div class="item shadow">
+            <p>{{ quiz.name }}</p>
+            <span>Tag: <code>{{ quiz.tag }}</code></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
