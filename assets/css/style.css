@@ -151,18 +151,21 @@ main {
 
 .subscribe__form,
 .newsletter__form,
+.quizzes__form,
 .search__form {
   padding-top: 27px;
 }
 @media screen and (min-width: 575.98px) {
   .subscribe__form,
   .newsletter__form,
+  .quizzes__form,
   .search__form {
     padding-top: 56px;
   }
 }
 .subscribe__form .form-control,
 .newsletter__form .form-control,
+.quizzes__form .form-control,
 .search__form .form-control {
   padding: 16px 18px;
   font-size: 14px;
@@ -175,6 +178,7 @@ main {
 }
 .subscribe__form .form-control::placeholder,
 .newsletter__form .form-control::placeholder,
+.quizzes__form .form-control::placeholder,
 .search__form .form-control::placeholder {
   color: inherit;
   padding-left: 10px;
@@ -182,6 +186,7 @@ main {
 @media screen and (min-width: 575.98px) {
   .subscribe__form .form-control,
   .newsletter__form .form-control,
+  .quizzes__form .form-control,
   .search__form .form-control {
     padding: 23px 34px;
     font-size: 20px;
@@ -189,6 +194,7 @@ main {
 }
 .subscribe__form button.button-primary,
 .newsletter__form button.button-primary,
+.quizzes__form button.button-primary,
 .search__form button.button-primary {
   background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
   border-radius: 30px;
@@ -200,6 +206,7 @@ main {
 @media screen and (min-width: 575.98px) {
   .subscribe__form button.button-primary,
   .newsletter__form button.button-primary,
+  .quizzes__form button.button-primary,
   .search__form button.button-primary {
     padding: 12px 40px;
     font-size: 20px;
@@ -267,6 +274,14 @@ main {
     height: 300px;
     width: 300px;
   }
+}
+
+input[type=checkbox] {
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
 }
 
 .header__logo {
@@ -375,6 +390,10 @@ main {
   gap: 18px;
   background: rgba(30, 41, 59, 0.4);
   border-radius: 20px;
+  cursor: pointer;
+}
+.projects .item:hover {
+  background: rgba(30, 41, 59, 0.7);
 }
 @media screen and (min-width: 768px) {
   .projects .item {
@@ -591,6 +610,23 @@ main {
   .about__content {
     font-size: 22px;
   }
+}
+
+.quizzes .item {
+  background: rgba(30, 41, 59, 0.4);
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.quizzes .item:hover {
+  background: rgba(30, 41, 59, 0.7);
+}
+.quizzes .item > p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray);
+  margin-bottom: 5px;
 }
 
 .footer {
