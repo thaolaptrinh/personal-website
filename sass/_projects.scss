@@ -1,7 +1,5 @@
 .projects {
 
-
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -23,6 +21,13 @@
     gap: 18px;
     background: rgba(30, 41, 59, 0.4);
     border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(30, 41, 59, 0.7);
+
+
+    }
 
     @include minWidth(768px) {
       flex-direction: row;

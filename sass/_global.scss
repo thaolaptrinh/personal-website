@@ -123,6 +123,7 @@ main {
 
 .subscribe__form,
 .newsletter__form,
+.quizzes__form,
 .search__form {
 
   padding-top: 27px;
@@ -249,4 +250,12 @@ main {
     height: 300px;
     width: 300px;
   }
+}
+
+input[type="checkbox"] {
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
 }
