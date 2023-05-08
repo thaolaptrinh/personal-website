@@ -74,8 +74,8 @@ app.run(function ($rootScope, $location, $route) {
 app.controller(
   "AppController",
   function ($rootScope, $scope, $location, $http, $sce, $routeParams) {
-    // $rootScope.API_URL = "https://personal-sage.vercel.app";
-    $rootScope.API_URL = "http://localhost:3000";
+    $rootScope.API_URL = "https://personal-sage.vercel.app";
+    // $rootScope.API_URL = "http://localhost:3000";
 
     console.log($location);
     $rootScope.BASE_URL = "http://" + $location.host() + ":" + $location.port();
